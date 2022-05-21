@@ -14,5 +14,27 @@
         <script defer src="/build/bundle.js"></script>
     </head>
 
-    <body></body>
+    <body>
+        <noscript>
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                .content {
+                    min-height: 100vh;
+                    padding: 4rem 2rem;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            </style>
+            <div class="content">
+                <img src="../assets/tuba.jpg" alt="tuba" width="60" height="48" id="tubaImg" class="tuba" />
+                <p>this tiny tuba kindly asks you to <a href="https://enable-javascript.com">turn on javascript</a>. it can't play without it.</p>
+            </div>
+        </noscript>
+    </body>
 </html>
