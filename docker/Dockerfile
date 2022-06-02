@@ -30,5 +30,6 @@ RUN pnpm audit fix
 
 COPY --from=0 /app/build ./
 
-EXPOSE 3000
+EXPOSE 8524
+ENV PORT=8524
 CMD ["node", "./index.js"]
