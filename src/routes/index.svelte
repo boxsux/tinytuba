@@ -3,6 +3,7 @@
 
     onMount(() => {
         const tubaNoise = document.getElementById('tuba');
+
         tubaNoise.load();
 
         const tubaImage = document.getElementById('tubaImg');
@@ -26,7 +27,7 @@
     }
 
     main {
-        min-height: 100vh;
+        height: calc(100vh - 20px);
         padding: 4rem 2rem;
         flex: 1;
         display: flex;
