@@ -1,38 +1,23 @@
-# create-svelte
+# Tiny Tuba
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Small little tuba that plays a sound when you click it. 🎺
 
-## Creating a project
+## Quickstart
 
-If you're seeing this, you've probably already done this step. Congrats!
+Requires Node and pnpm.
 
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone the repo and install all the necessary packages:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npx degit nullpasswd/tinytuba tinytuba && \
+    cd tinytuba && \
+    pnpm i
 ```
 
-## Building
+### Production setup
 
-To create a production version of your app:
+This project uses [@sveltejs/adapter-node](https://www.npmjs.com/package/@sveltejs/adapter-node) for production.
 
-```bash
-npm run build
-```
+To build the app, run `npm run build` inside the root folder of this project.
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+After that's done, you can run the compiled website with `node build/index.js`.
